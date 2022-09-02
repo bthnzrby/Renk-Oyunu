@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+h1{
+    font-size: 50px;
+    margin: 5px 0;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 3px;
+}
+
+h3{
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+}
+
+h4{
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+#all{
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#header{
+    width: 100%;
+    height: 33vh;
+}
+
+.header-nav{
+    width: 100%;
+    height: 27vh;
+    background-color: #4682b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.header-text{
+    text-align: center;
+}
+
+.mini-nav{
+    height: 6vh;
+    width: 100%;
+    background-color: #fff;
+    color: #4682b4;
+    position: relative;
+    display: flex;
+    font-size: 22px;
+}
+
+.change{
+    width:67%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.new-colors{
+    height: 6vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-colors:hover{
+    background-color: #4682b4;
+    color: #fff;
+    transition: .8s;
+}
+
+.difficulty{
+    width:10%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;   /* bold yapamıyorum burda ki yazıları */
+}
+
+.easy{
+    width: 50%;
+    height: 6vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.easy:hover{
+    background-color: #4682b4;
+    color: #fff;
+    transition: .8s;
+}
+
+.hard{
+    width: 50%;
+    height: 6vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #4682b4;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.container{
+    width: 100%;
+    height: 67vh;
+    background-color: rgb(35,35,35);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrilateral{
+    width: 60%;
+    height: 64vh;
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.boxes{
+    width: 85%;
+    height: 61vh;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    height: 27vh;
+    width: 29%;
+    border-radius: 30px;
+    background-color: red;
+    cursor: pointer;
+}
+
+/* RESPONSİVE */
+
+@media only screen and (max-width:1240px){
+    .mini-nav{
+        font-size: 19px;
+    }
+
+}
+@media only screen and (max-width:1100px){
+    .mini-nav{
+        font-size: 16px;
+    }
+    h1{
+        font-size: 45px;
+    }
+
+    h3{
+        font-size: 26px;
+    }
+
+    .box{
+        height: 23vh;
+        border-radius: 27px;
+    }
+
+    .boxes{
+        height: 53vh;
+    }
+}
+
+@media only screen and (max-width:950px){
+
+    .mini-nav{
+        font-size: 14px;
+    }
+
+    .easy{
+        padding: 0 15px;
+    }
+
+    .hard{
+        padding: 0 15px;
+    }
+    h1{
+        font-size: 41px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+     
+    .box{
+        height: 20vh;
+        border-radius: 24px;
+    }
+
+    .boxes{
+        height: 46vh;
+    }
+}
+
+@media only screen and (max-width:815px){
+    .easy{
+        padding: 0 25px;
+    }
+
+    .hard{
+        padding: 0 25px;
+    }
+    h1{
+        font-size: 38px;
+    }
+
+    h3{
+        font-size: 23px;
+    }
+
+    .box{
+        height: 19vh;
+        border-radius: 21px;
+    }
+
+    .boxes{
+        height: 44vh;
+    }
+}
+
+@media only screen and (max-width:725px){
+    .box{
+        height: 16vh;
+        border-radius: 20px;
+    }
+
+    .boxes{
+        height: 38vh;
+    }
+}
+
+@media only screen and (max-width:555px){
+    .mini-nav{
+        font-size: 11px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 19px;
+    }
+
+    .difficulty{
+        margin-left: 15px;
+    }
+
+    .box{
+        height: 14vh;
+        border-radius: 18px;
+    }
+
+    .boxes{
+        height: 32vh;
+    }
+
+}
+
+@media only screen and (max-width:480px){
+
+    .box{
+        height: 12vh;
+        border-radius: 17px;
+    }
+
+    .boxes{
+        height: 29vh;
+    }
+}
+
+@media only screen and (max-width:420px){
+    h1{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    .difficulty{
+        margin-left: 25px;
+    }
+    
+    .box{
+        height: 11vh;
+        border-radius: 16px;
+    }
+
+    .boxes{
+        height: 25vh;
+    }
+}
+
+@media only screen and (max-width:370px){
+    h1{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    .difficulty{
+        margin-left: 30px;
+    }
+
+    .mini-nav{
+        font-size: 10px;
+    }
+
+    .box{
+        height: 9vh;
+        border-radius:13px;
+    }
+
+    .boxes{
+        height: 20Vh;
+    }
+}
+
+@media only screen and (max-width:305px){
+    h1{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .mini-nav{
+        font-size: 8px;
+    }
+
+    .box{
+        height: 7vh;
+        border-radius: 10px;
+    }
+
+    .boxes{
+        height: 16vh;
+    }
+}
+
+@media only screen and (max-width:250px){
+    h1{
+        font-size: 13px;
+    }
+
+    h3{
+        font-size: 9px;
+    }
+
+    .box{
+        height: 6vh;
+        border-radius:7px;
+    }
+
+    .boxes{
+        height: 14vh;
+    }
+}
+
+@media only screen and (max-width:200px){
+    h1{
+        font-size: 11px;
+    }
+
+    h3{
+        font-size: 8px;
+    }
+
+    .box{
+        height: 4vh;
+        border-radius:5px;
+    }
+
+    .boxes{
+        height: 9vh;
+    }
+}
